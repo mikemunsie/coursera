@@ -16,6 +16,8 @@ def getMaxPairwiseFast(numbers):
     return maxN
   maxn1 = getMax(newNumbers)
   maxn2 = getMax(newNumbers)
+  print("MaxN1: ", maxn1)
+  print("MaxN2: ", maxn2)
   return maxn1*maxn2
 
 # Use this one to show an incorrect solution
@@ -42,11 +44,11 @@ def getMaxPairwiseSlow(numbers):
   return result
 
 while(True):
-  n = random.randint(2, 11)
+  n = random.randint(2, 1000)
   a = []
   for i in range(0, n):
     a.append(random.randint(0, 100000))
-    print(a[i])
+  print(a)
   res1 = getMaxPairwiseSlow(a)
   res2 = getMaxPairwiseFast(a)
   if (res1 != res2):

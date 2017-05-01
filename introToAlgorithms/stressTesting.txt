@@ -2,3 +2,4 @@ Stress Testing
 
 - A program that generates random tests in an infinite loop.
 - Launches your solution and an alternative solution. The alternative solution you implement yourself (it's different than your main solution)
+- Stress test can last as long as you want, but most wait about 10s, 30s.
