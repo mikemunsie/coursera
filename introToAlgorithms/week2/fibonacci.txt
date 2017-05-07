@@ -1,0 +1,28 @@
+- A naive algorithm takes too long on small examples. You want to improve that algorithm.
+
+- Fibonacci is defined as 0, 1, Fn - 1 + Fn - 2
+
+Example of slow fibanacci recursive function:
+
+def fibRecurse(n):
+  if (n < 1):
+    return n
+  else:
+    return fibRecurse(n-1) + fibRecurse(n-2)
+
+
+- Start off by writing a hand computation
+  0, 1, 1, 2 ,3
+  0+1 = 1
+  1+1 = 2
+  1+2 = 3
+  3+5 = 5
+  5+8 = 8
+
+You can see that storing the result of each time can make this faster to compute.
+
+f[0] = 1;
+f[1] = 2;
+f[2] = 3;
+f[2] = 5;
+f[2] = 8;

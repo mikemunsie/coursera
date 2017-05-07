@@ -1,0 +1,12 @@
+- What is the largest number the numerator and denominator can be divided by.
+- Divide numerator and demoninator by d
+  a/d / b/d
+  We want d to be as large as possible. W
+- Ex: 4/10 => 2
+- Ex: 10/10 => 10
+
+Compute GCD
+  Input: Integers a,b > 0
+  Output: gcd(a,b)
+
+- Naive algorithm: An algorithm that works, but not optimized

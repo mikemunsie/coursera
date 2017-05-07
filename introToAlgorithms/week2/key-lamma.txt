@@ -1,0 +1,16 @@
+Let a' be the remainder when a is divided by b, then gcd(a,b) = gcd(a,b) = gcd(b,a)
+
+Euclidian Algorithm:
+  if b=0: return a
+  a' <-- the remainder when a is divided by b
+  return euclidianGCD(b,a')
+
+- Calculate remainder
+  1. 88 % 10
+
+// Implemented in JS
+function eucGCD(a,b) {
+  if (b === 0) return a;
+  a = a % b;
+  return eucGCD(b,a);
+}
