@@ -14,3 +14,6 @@ function eucGCD(a,b) {
   a = a % b;
   return eucGCD(b,a);
 }
+
+Find the correct algorithm requires knowing something interesting about the problem.
+Review the structure of the algorithm.

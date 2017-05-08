@@ -1,0 +1,13 @@
+Review a previous algorithm:
+  Function FibList(n)
+    create an array F[0...n]
+    F[0] <- 0
+    F[1] <- 1
+    for i from 2 to n:
+      F[i] < F[i-1] + F[i-2]
+    return F[n]
+
+- This is 2n + 2 lines of code.  This is not the running time of the algorithm.
+- Figuring out accurate runtimes is a huge mess.
+- We want to be able to measure runtime without knowing all the things behind the scenes (The compiler, computer used, memory, etc.)
+
