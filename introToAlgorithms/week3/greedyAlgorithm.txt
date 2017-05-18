@@ -1,0 +1,29 @@
+A greedy algorithm is an algorithmic paradigm that follows the problem solving heuristic of making the locally optimal choice at each state with the hope of finding a global best outcome.
+
+- Start with a safe move.
+- Prove the safe move.
+- Solve subproblem.
+- Estimate running time.
+
+Greedy Strategy: Start with a list of digits, find the max, and remove it from the list. Repeat until there are no digits in the list.
+
+Car Fueling:
+Full tank = 400km
+
+Subproblem: Similar of problem of smaller size
+ex:
+Largest Number:
+What is the largest number that consists of digits 3,9,5,9,7,1?
+9
+What is the largest number that consists of digits 3,5,9,7,1?
+9
+What is the largest number that consists of digits 3,5,7,1?
+7
+...
+
+Make a greedy choice, prove that it is a safe move.
+
+Ex: Grouping children with ages no more than 1 year apart: 3.6, 4, 4.8, 5
+
+When solving an algorithm, reformulate the problem into mathematical terms.
+
