@@ -1,0 +1,24 @@
+TODO: Take a math class. This is getting hard to follow.
+
+What is the divide and conquer algorithm?
+
+Take a problem, break it down into subproblems. The subproblems must of the same type as the original. Subproblems cannot overlap. Break apart each problem, and solve each problem one at a time. Once you solve each problem, combine the results and solve that final problem.
+
+
+Recurrence defining worst time: T(n) = T(n-1) + constant
+
+Binary Search:
+Search for an element by checking the midpoint of the array if the value matches what your criteria. If not, start at the endpoint and repeat the same process until you find the value.
+
+You can do this recursively or iteratively.
+
+while low <= high:
+  mid <- [low + ((high-low)/2)]
+  if key = A[mid]:
+    return mid
+  else if key < A[mid]:
+    high = mid-1
+  else:
+    low = mid+1
+
+Runtime of binary search is O(log(n))

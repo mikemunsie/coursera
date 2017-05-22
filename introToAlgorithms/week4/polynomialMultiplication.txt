@@ -1,0 +1,23 @@
+Polynomial multiplication is taking two polynomials and multiplying them together.
+  Breakout on polynomials: http://www.virtualnerd.com/algebra-1/exponents-exponential-functions/monomials-polynomials/polynomials/polynomial-definition
+  A monomial is 5x, 8, -8.
+  A polynomial is a combo monomial. 7 + 5xy + 3x-8
+  A term is just the monomials. (ex: 7, 5xy, 3x, -8)
+  If you have a variable in the denominator, it is not a polynomial  (6/x)
+
+Use cases for multiplying polynomials:
+   - Error-correcting codes
+   - Large integer multiplication
+   - Generating functions
+
+Coefficient is the leading number in a polynomial
+
+(3, 2, 5) * (5, 1, 2)
+(3x^2 + 2x + 5) * (5x^2 + x + 2)
+Multiply them and you will get:
+13x^3 + 36x^2 + 9x + 10
+
+
+TODO: This was harder to understand.
+http://algorithm.cs.nthu.edu.tw/~course/Extra_Info/Divide%20and%20Conquer_supplement.pdf
+
