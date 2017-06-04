@@ -59,9 +59,10 @@ class TreeHeight:
                 nodes[childIndex].addParent(nodes[parentIndex])
 
         for nodeIndex in range(self.n):
-            height = 0
+            height = 1
             parents = nodes[nodeIndex].parents
             while len(parents) > 0:
+                height+=1
                 parents = parents[0].parents
                 maxHeight = max(height, maxHeight)
         return maxHeight
