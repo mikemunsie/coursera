@@ -1,0 +1,81 @@
+Trees are used to represent hierarchy.
+
+A tree is empty, or a node with a key and a list of child trees.
+
+Binary Search Tree: Has two children at each node, and we have a property: the root node is >= the nodes in the left tile, and less than in the right tile. Allows you to search quickly.
+
+     Les
+    /   \
+Cathy    Sam
+
+This tree has 3 nodes. Parents are always above children. Les is the Root Node.
+
+Ancestors: parents or parents of the parents of that node.
+Ex: Cathy's ancestores are Les, and would have more if Les had parents.
+
+Descendants are the childs or childs of childs.
+
+Siblings: Nodes that share the same parent
+Leaf: Node that has no children
+Height: What is the furthest leaf. What is the farthest down descendant.
+Child: The node directly beneath the parent. A grandchild is not a child.
+Forest: Collection of trees.
+
+A Node contains: key, children, parent (optional)
+
+How to traverse a tree
+==============================
+
+Two main ways of traversing a tree.
+Depth First: Completely traverse one sub tree before exploring a sibling sub tree
+Breadth First: Traverse all nodes at one level before going to the next level. (Traverse the siblings before traversing the children)
+
+Depth First:
+inOrderTraversal(tree):
+  if tree === nil: return;
+  InOrderTraversal(tree.left)
+  print(tree.key)
+  InOrderTraversal(tree.left)
+
+             Les
+            /   \
+        Cathy    Sam
+        /   \       \
+      Mike  Test    Cool
+
+You would start at Les, goto Cathy, and then Mike. Mike has no nodes on the left or right, so go back to cathy and go right. You would then hit Test. Test has no nodes so then Go back to Les and choose Sam. Sam has no left nodes, so go to Cool, and boom done.
+
+Mike, Cathy, Test, Les, Sam, Cool
+
+PreOrderTraversal(tree):
+  if tree === nil: return;
+  print(tree.key)
+  PreOrderTraversal(tree.left)
+  PreOrderTraversal(tree.right)
+
+PostOrderTraversal(tree):
+  if tree === nil: return;
+  PostOrderTraversal(tree.left)
+  PostOrderTraversal(tree.right)
+  print(tree.key)
+
+
+LevelTraversal(tree):
+  if tree === nil: return;
+  Queue q
+  q.enqueue(tree)
+  while !q.empty:
+    node <- q.dequeue;
+    print node;
+    if node.left:
+      q.enqueue(node.left)
+    if node.right:
+      q.enqueue(node.right)
+
+             Les
+            /   \
+        Cathy    Sam
+        /   \       \
+      Mike  Test    Cool
+
+Les, Cathy, Sam, Mike, Test, Cool

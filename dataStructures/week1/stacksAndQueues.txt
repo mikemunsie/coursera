@@ -1,0 +1,18 @@
+Stack (LIFO)
+
+Abstract dataType with the following operations:
+  push(key) - adds key to the collection
+  key Top() - Returns most recently added key
+  key Pop() - Removes and returns most recently added key
+  Empty() - Is the array empty
+
+  Stacks can be implemented with either an array or a linked list
+
+Queue (FIFO)
+
+Abstract dataType with the following operations:
+  enqueue - Adds key to the collection
+  dequeue - Removes and returns least recently added key
+  Empty - Is the array empty
+
+Each Queue operation is O(1)

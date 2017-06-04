@@ -1,0 +1,32 @@
+Arrays have constant time access. Arrays are contiguous area of memory consisting of equal size elements indexed by integers.
+Address = array_addr + elem_size * (i-first_index)
+1000 + 8 * (6)
+1000 + 48
+1048
+
+Row major is where the columns update faster than the rows in the display.
+Row major = (1,1), (1,2), (1,3)
+Column major = (1,1), (2,1), (3,1)
+
+If you remove an element from the beginning, it's an O(n) operation since the elements must be re-arranged back.
+Ex: [0,1,2] -> [x,1,2] -> [1,x,2] -> [1,2,x] -> [1,2]
+
+It is constant time O(1) to read an array from any position.
+
+It is expensive to add/remove in the middle or beginning.
+
+c,b,a
+
+pushFront = unshift  = Add item to the front of the list (ex: pushFront(d) => d,c,b,a)
+pushBack = push = Add item to the back of the list (ex: pushBack(e) => c,b,a,e)
+popBack = pop =
+popFront = splice(0,1)
+
+Head and tail pointers (head points to front, tail points to back)
+
+Nil = non existent
+
+Doubly linked list
+=======================
+
+Each node has a pointer to the next element, and a pointer to the previous. This makes popBack and addBefore operations O(1). With a singly linked list, the popBack and addBefore operations become O(n).
